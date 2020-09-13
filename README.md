@@ -1,5 +1,7 @@
 # MagicTabBar
 
+![](MagicTabBar/VC/MagicTabBar.gif)
+
 # Installation
 - Drag & drop source folder in your project directory.
 
