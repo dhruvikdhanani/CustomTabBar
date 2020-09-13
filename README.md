@@ -70,7 +70,7 @@ window?.rootViewController = tab
 window?.makeKeyAndVisible()
 ```
 
-# Now Boommmmm & Run. Your one star give inspiration.
+# Now Boommmmm & Run. Your one star give me a lot inspiration.
 
 - For More Info... Download Project and check all stuff configuration in AppDelegate
 
