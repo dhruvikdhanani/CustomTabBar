@@ -1,44 +1,47 @@
 # MagicTabBar
 
+# Installation
+- Drag & drop source folder in your project directory.
 
-1 ) Create TabItem Model like below that return [ViewController]
 
-TabItem model return Tab with Image, without Image & tabName
+# 1) Create TabItem Model like below that return [ViewController]
 
-For Example 
+- TabItem model return Tab with Image, without Image & tabName
+
+```swift
 let v1 = HomeViewController(nibName: "HomeViewController", bundle: nil)
 TabItem(v1, imageName: "home", selectedImage: nil, tabName: nil)
 
-v1 stands for ViewController
-pass image name as String
-pass selectedImage as UIImage
-pas tabName as String
+// v1 stands for ViewController
+// pass image name as String
+// pass selectedImage as UIImage
+// pass tabName as String
 
 func magicTab() -> [TabItem] {
   let v1 = HomeViewController(nibName: "HomeViewController", bundle: nil)
-  v1.tabController = .Home
+
   let v2 = HomeViewController(nibName: "HomeViewController", bundle: nil)
-  v2.tabController = .Search
+
   let v3 = HomeViewController(nibName: "HomeViewController", bundle: nil)
-  v3.tabController = .Cart
+
   let v4 = HomeViewController(nibName: "HomeViewController", bundle: nil)
-  v4.tabController = .Profile
+
   let v5 = HomeViewController(nibName: "HomeViewController", bundle: nil)
-  v5.tabController = .Menu
+
   let v6 = HomeViewController(nibName: "HomeViewController", bundle: nil)
-  v6.tabController = .Discount
+
   let v7 = HomeViewController(nibName: "HomeViewController", bundle: nil)
-  v7.tabController = .Car
+
   let v8 = HomeViewController(nibName: "HomeViewController", bundle: nil)
-  v8.tabController = .Free
+
   let v9 = HomeViewController(nibName: "HomeViewController", bundle: nil)
-  v9.tabController = .Money
+
   let v10 = HomeViewController(nibName: "HomeViewController", bundle: nil)
-  v10.tabController = .Bag
+
   let v11 = HomeViewController(nibName: "HomeViewController", bundle: nil)
-  v11.tabController = .Payment
+
   let v12 = HomeViewController(nibName: "HomeViewController", bundle: nil)
-  v12.tabController = .Sale
+
   
   let t1 = TabItem(v1, imageName: "home", selectedImage: nil, tabName: nil)
   let t2 = TabItem(v2, imageName: "search", selectedImage: nil, tabName: nil)
@@ -54,19 +57,18 @@ func magicTab() -> [TabItem] {
   let t12 = TabItem(v12, imageName: "car", selectedImage: nil, tabName: nil)
   return [t1,t2,t3,t4,t5,t6,t7,t8,t9,t10,t11,t12]
 }
+```
 
+## 2) Set MagicTabBarViewController as rootViewController
 
-2) Set MagicTabBarViewController as rootViewController
-
+```swift
 let tab = MagicTabBarViewController.init(nibName: "MagicTabBarViewController", bundle: nil, magicData: magicTab())
 window?.rootViewController = tab
 window?.makeKeyAndVisible()
+```
 
-
-Now Boommmmm & Run.
-
-
-For More Info... Download Project and check all stuff configuration in AppDelegate
+# Now Boommmmm & Run.
+- For More Info... Download Project and check all stuff configuration in AppDelegate
 
 
 
