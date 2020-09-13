@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		85052561250DF8A3000509AB /* MagicTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85052560250DF8A3000509AB /* MagicTabBarViewController.swift */; };
 		85B2D81124FBC81500A966D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B2D81024FBC81500A966D6 /* AppDelegate.swift */; };
 		85B2D81524FBC81500A966D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B2D81424FBC81500A966D6 /* ViewController.swift */; };
 		85B2D81A24FBC81700A966D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85B2D81924FBC81700A966D6 /* Assets.xcassets */; };
 		85B2D81D24FBC81700A966D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85B2D81B24FBC81700A966D6 /* LaunchScreen.storyboard */; };
 		85B2D82724FBCA4600A966D6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B2D82524FBCA4600A966D6 /* HomeViewController.swift */; };
 		85B2D82824FBCA4600A966D6 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85B2D82624FBCA4600A966D6 /* HomeViewController.xib */; };
-		85B2D82B24FBCB2600A966D6 /* MagicTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B2D82A24FBCB2600A966D6 /* MagicTabBarViewController.swift */; };
 		85B2D82E24FBD99300A966D6 /* CustomizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B2D82D24FBD99300A966D6 /* CustomizeView.swift */; };
 		85B2D83024FBD9AC00A966D6 /* CustomizeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85B2D82F24FBD9AC00A966D6 /* CustomizeView.xib */; };
 		85B2D83624FBDDA700A966D6 /* DragableCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B2D83424FBDDA700A966D6 /* DragableCollectionViewCell.swift */; };
@@ -21,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		85052560250DF8A3000509AB /* MagicTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagicTabBarViewController.swift; sourceTree = "<group>"; };
 		85B2D80D24FBC81500A966D6 /* MagicTabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicTabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85B2D81024FBC81500A966D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85B2D81424FBC81500A966D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,7 +30,6 @@
 		85B2D81E24FBC81700A966D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85B2D82524FBCA4600A966D6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		85B2D82624FBCA4600A966D6 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
-		85B2D82A24FBCB2600A966D6 /* MagicTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicTabBarViewController.swift; sourceTree = "<group>"; };
 		85B2D82D24FBD99300A966D6 /* CustomizeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizeView.swift; sourceTree = "<group>"; };
 		85B2D82F24FBD9AC00A966D6 /* CustomizeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomizeView.xib; sourceTree = "<group>"; };
 		85B2D83424FBDDA700A966D6 /* DragableCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragableCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -66,8 +66,7 @@
 		85B2D80F24FBC81500A966D6 /* MagicTabBar */ = {
 			isa = PBXGroup;
 			children = (
-				85B2D82C24FBD96A00A966D6 /* View */,
-				85B2D82924FBCB1200A966D6 /* TabBar */,
+				85B2D82C24FBD96A00A966D6 /* Source */,
 				85B2D82424FBCA2B00A966D6 /* VC */,
 				85B2D81024FBC81500A966D6 /* AppDelegate.swift */,
 				85B2D81424FBC81500A966D6 /* ViewController.swift */,
@@ -87,22 +86,15 @@
 			path = VC;
 			sourceTree = "<group>";
 		};
-		85B2D82924FBCB1200A966D6 /* TabBar */ = {
+		85B2D82C24FBD96A00A966D6 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				85B2D82A24FBCB2600A966D6 /* MagicTabBarViewController.swift */,
-			);
-			path = TabBar;
-			sourceTree = "<group>";
-		};
-		85B2D82C24FBD96A00A966D6 /* View */ = {
-			isa = PBXGroup;
-			children = (
+				85052560250DF8A3000509AB /* MagicTabBarViewController.swift */,
 				85B2D83324FBDD8B00A966D6 /* Cell */,
 				85B2D82D24FBD99300A966D6 /* CustomizeView.swift */,
 				85B2D82F24FBD9AC00A966D6 /* CustomizeView.xib */,
 			);
-			path = View;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		85B2D83324FBDD8B00A966D6 /* Cell */ = {
@@ -187,11 +179,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85052561250DF8A3000509AB /* MagicTabBarViewController.swift in Sources */,
 				85B2D83624FBDDA700A966D6 /* DragableCollectionViewCell.swift in Sources */,
 				85B2D81524FBC81500A966D6 /* ViewController.swift in Sources */,
 				85B2D81124FBC81500A966D6 /* AppDelegate.swift in Sources */,
 				85B2D82E24FBD99300A966D6 /* CustomizeView.swift in Sources */,
-				85B2D82B24FBCB2600A966D6 /* MagicTabBarViewController.swift in Sources */,
 				85B2D82724FBCA4600A966D6 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
