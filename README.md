@@ -76,7 +76,6 @@ window?.makeKeyAndVisible()
 
 <html>
   <head>
-    <title>Your Page Title</title>
     <meta name="google-site-verification" content="ncF6v_cvq7BORd9MG5CwUkMXvV0-wbbHqmLd0b-v9hk" />
   </head>
 <body>
