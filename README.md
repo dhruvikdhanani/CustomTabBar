@@ -1,8 +1,3 @@
-  <head>
-    <meta name="google-site-verification" content="AvjjzvmdAdcv7qWwGVbIPEDZD_dbcF2KtvMx5ax4A4A" />
-  </head>
-
-
 # MagicTabBar
 
 ![](MagicTabBar/VC/MagicTabBar.gif)
