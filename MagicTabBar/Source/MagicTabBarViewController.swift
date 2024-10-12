@@ -61,7 +61,7 @@ class MagicTabBarViewController: UITabBarController, UITabBarControllerDelegate 
       custom.frame = CGRect(x: 0, y: tabBar.frame.origin.y, width: screenWidth, height: 80 + view.safeAreaInsets.bottom)
       custom.reloadData(magicTab.map{$0.image})
       self.show(custom)
-      UIView.animate(withDuration: 0.5, animations: { [weak self] in
+      UIView.animate(withDuration: 0.2, animations: { [weak self] in
         custom.leadingOfBottomCollectionView.constant = -(0.25 * screenWidth)
         custom.trailingOfBottomCollectionView.constant = 0.25 * screenWidth
         self?.view.layoutIfNeeded()
@@ -81,7 +81,7 @@ class MagicTabBarViewController: UITabBarController, UITabBarControllerDelegate 
       /// Done Action
       custom.doneAction = { [weak self] (data) in
         self?.viewControllers = self?.setTab()
-        UIView.animate(withDuration: 0.5, animations: { [weak self] in
+        UIView.animate(withDuration: 0.2, animations: { [weak self] in
           custom.viewWithTag(2020)?.alpha = 0
           custom.heightOfUpperView.constant = 0
           self?.view.layoutIfNeeded()
@@ -89,7 +89,7 @@ class MagicTabBarViewController: UITabBarController, UITabBarControllerDelegate 
           custom.frame = CGRect(x: 0, y: self!.tabBar.frame.origin.y, width: screenWidth, height: 80 + self!.view.safeAreaInsets.bottom)
           custom.setHeight(height: 80 + self!.view.safeAreaInsets.bottom)
           self?.view.layoutIfNeeded()
-          UIView.animate(withDuration: 0.5, animations: {[weak self] in
+          UIView.animate(withDuration: 0.2, animations: {[weak self] in
             custom.trailingOfBottomCollectionView.constant = 0
             custom.leadingOfBottomCollectionView.constant = 0
             custom.addMenuCollectionView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)

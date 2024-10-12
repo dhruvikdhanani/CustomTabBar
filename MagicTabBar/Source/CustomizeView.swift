@@ -236,7 +236,7 @@ extension CustomizeView {
                   self.finalArray.insert(item.dragItem.localObject as! String, at: indexPath.row)
                 if let index = self.additionalArray.firstIndex(of: item.dragItem.localObject as! String) {
                   self.additionalArray.remove(at: index)
-                  customCollectionView.deleteItems(at: [IndexPath(row: index, section: 0)])
+                  customCollectionView.reloadData()
                 }
               }
               else
@@ -244,7 +244,7 @@ extension CustomizeView {
                   self.additionalArray.insert(item.dragItem.localObject as! String, at: indexPath.row)
                 if let index = self.finalArray.firstIndex(of: item.dragItem.localObject as! String) {
                   self.finalArray.remove(at: index)
-                  addMenuCollectionView.deleteItems(at: [IndexPath(row: index, section: 0)])
+                    addMenuCollectionView.reloadData()
                 }
               }
               indexPaths.append(indexPath)
